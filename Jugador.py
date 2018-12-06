@@ -1,10 +1,11 @@
 import singleton
 
 class cJugador:
-    def __init__(self,nombre):
+    def __init__(self,nombre,fichas):
         self.__nombre=nombre
         self.__tantos=0
         self.__maxTantos=singleton.OnlyOne()
+        self.fichas = fichas
     def getNombre(self):
         return self.__nombre
     def setNombre(self,nom):

@@ -1,17 +1,15 @@
-import Jugador
+import jugador
+import generaFichas
 
-j1=Jugador.cJugador("jugador1")
-j2=Jugador.cJugador("jugador2")
-j3=Jugador.cJugador("jugador3")
-j4=Jugador.cJugador("jugador4")
-j1.setMaxTantos(200)
-j2.setMaxTantos(150)
-judadores=(j1,j2,j3,j4)
-print(j1.getMaxTantos())
-print(j2.getMaxTantos())
-print(j3.getMaxTantos())
-print(j4.getMaxTantos())
-j1.setTantos(50)
-j1.setTantos(20)
-j1.setTantos(120)
-print(j1.getTantos())
+listafichas=generaFichas.cGenera()
+
+j1=jugador.cJugador("jugador1",listafichas.listas[0:10])
+j2=jugador.cJugador("jugador2",listafichas.listas[10:20])
+j3=jugador.cJugador("jugador3",listafichas.listas[20:30])
+j4=jugador.cJugador("jugador4",listafichas.listas[30:40])
+
+print(j1.fichas[0].)
+print(j2.fichas)
+print(j3.fichas)
+print(j4.fichas)
+
